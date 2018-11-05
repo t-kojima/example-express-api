@@ -1,0 +1,11 @@
+{
+  "appenders": {
+    "console": { "type": "console" },
+    "app": { "type": "file", "filename": "app.log" },
+    "express": { "type": "file", "filename": "express.log" }
+  },
+  "categories": {
+    "default": { "appenders": ["console", "app"], "level": "debug" },
+    "express": { "appenders": ["console", "express"], "level": "info" }
+  }
+}
